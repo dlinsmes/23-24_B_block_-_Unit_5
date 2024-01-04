@@ -5,7 +5,7 @@ public class PenguinClient {
         //declare a Penguin object called p1
         //-an object is one specific example
         //made from the Penguin class (blueprint)
-        //-instantiate by calling the no-parameter contructor
+        //-instantiate by calling the no-parameter constructor
         Penguin p1 = new Penguin();
 
         //at this point the default values defined in the constructor are set
