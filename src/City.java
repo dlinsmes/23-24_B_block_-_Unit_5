@@ -15,6 +15,10 @@ public class City {
     private String language;
     private boolean lockdown;
 
+    //static modifier - the variable or method is shared
+    //by the whole class instead of one specific object
+    static int numCities = 0;
+
     //constructors are special methods that let
     //outside classes instantiate (make) objects
     //from this class
@@ -34,6 +38,8 @@ public class City {
         //even though there's no param for lockdown, the
         //constructor should still give an initial value
         lockdown = false;
+
+        numCities++;
     }
 
     //accessors aka getters aka get methods
