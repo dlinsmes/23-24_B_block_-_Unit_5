@@ -5,9 +5,12 @@ public class Deck {
     //of objects of a different class
     private Card [] cards;
 
+    private int top;
+
     public Deck() {
         //every deck starts off as a set of 52 unshuffled cards
         cards = new Card[52];
+        top = 0;
 
         int index = 0;
 
@@ -54,6 +57,13 @@ public class Deck {
             cards[rand] = temp;
 
         }
+    }
+
+    //an object can be used as a return type
+    public Card draw() {
+        Card toDraw = cards[top];
+        top++;
+        return toDraw;
     }
 
 }

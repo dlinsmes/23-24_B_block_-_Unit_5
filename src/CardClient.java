@@ -17,5 +17,14 @@ public class CardClient {
         //print the shuffled deck
         d.shuffle();
         System.out.println(d);
+
+        Card c = d.draw();
+        System.out.println(c);
+
+        c = d.draw();
+        System.out.println(c);
+
+        c = d.draw();
+        System.out.println(c);
     }
 }
