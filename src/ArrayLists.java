@@ -89,14 +89,18 @@ public class ArrayLists {
 
         BlackjackPlayer p = new BlackjackPlayer("grayson");
         Card c1 = new Card("Spades", 1);
-        Card c2 = new Card("Hearts", 7);
+        Card c2 = new Card("Spades", 7);
         Card c3 = new Card("Spades", 12);
+
 
         //score should be 18
         p.addCard(c1);
-        p.addCard(c2);
+        p.addCard(c1);
         p.addCard(c3);
 
+
         System.out.println(p.getScore());
+
+        System.out.println(p);
     }
 }
